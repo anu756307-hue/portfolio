@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    background:#f374cf;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    position:top left;
+}
+
+style.grid-container  {  
+  display: grid;  
+  justify-self: space-evenly;
+  grid-gap:10px;
+  grid-template-columns:  50px 50px 50px;     
+  background-color: #2196F3;  
+  padding: 10px;  
+} 
+.grid-container > div {  
+  background-color: rgba(255, 61, 152, 0.8);  
+  border:1px solid rgba(240, 67, 67, 0.8);  
+  padding: 20px 0;
+  font-size: 30px;  
+  text-align: center;
+}
+
+.item1{}
+    <h1>the grid-column-gap property:</h1>
+    <div class="grid-container">
+    <div class="grid-item" class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+   
+img{
+    border:2px solid #d11d9e;
+    max-width:100%;
+}
+@media screen and (max-width: 500px) {
+    body{
+        background:red;
+}
+
+.hamburger-icon{
+    display: log-in , homepage , logout;
+    position:right top ;
+    cursor: pointer;
+
+}
+}
