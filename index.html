@@ -5,29 +5,52 @@
             <meta name = "viewport"content="width=device-width,initial-scale=1.0">
             <title>home page</title>
             <link rel ="stylesheet" href="index.css">
+            <link rel="stylesheet" href="toogle.css">   
         </head>
+
         <body>
             <header class="header">
-                 <a href="homepage">homepage</a>
-                 <a href="project grid">project</a>
-                 <a href="contact">contact page</a>
-                 <a href="video demo">video demo</a>
-                 <a href="site report">site report</a>
-                 <a href="hamburgericon"hamburger icon></a>
-                 <a href="toogle button"night to day mode></a>
-
-                <div class="hamburger">
-                    <label for="menu=toogle" class="hamburger-icon">☰</label>
-                    <label>
+                <nav>
+                    <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="videoDemo.html">Video Demo</a></li>
+                            <li><a href="sitereport.html">Site Report</a></li>
+                            <a href="hamburgericon"hamburger icon></a>
+                            <a href="toogle button"night to day mode></a>
+                            
+                 
+                            <div class="hamburger">
+                                <label for="menu-toggle" class="hamburger-icon">☰</label>
+                        
+                            </div>
+                         </header>
+                      </div>
+                     </ul>
+                 </nav>
+ 
+            
             </header>
-            </div>
-            <div class="toogle">
-                 <label for="theme-sun">🌓</label>
-                 <span class="icon-moon">🌙</span>
+                <!-- targets -->
+                <span id="day"></span>
+                <span id="night"></span>
+
+                <!-- TOGGLE (only one shows at a time) -->
+                 <div class="toggle">
+                        <a href="#night" class="btn day-btn">☀ Day</a>
+                        <a href="#day" class="btn night-btn">🌙 Night</a>
+        
+                </div>
+                        
+                <div class="scene">
+                    <div class="sun"></div>
+                    <div class="moon"></div>
+                </div>
 
             <section>
-                <div>
-                   <img src ="c:\Users\LENOVO\OneDrive\Pictures\Camera Roll\IMG-20250611-WA0002.jpg" alt="my photo" width="400">      
+                <div class="section">
+                   <img src="https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="my photo" width="400">      
                  </div>
             </section>
         </body>

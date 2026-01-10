@@ -1,16 +1,32 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    line height:1.6;
 }
 
 header {
     display: flex;
-    background:#f374cf;
+    background:#000000;
+    color: white;
     padding: 20px;
-    text-align: center;
-    justify-content: space-between;
-    position:top left;
+    position:top left , left , left , left , left;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: center;
+}
+
 
 style.grid-container  {  
   display: grid;  
@@ -27,19 +43,10 @@ style.grid-container  {
   font-size: 30px;  
   text-align: center;
 }
-
-.item1{}
-    <h1>the grid-column-gap property:</h1>
-    <div class="grid-container">
-    <div class="grid-item" class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-   
 img{
     border:2px solid #d11d9e;
     max-width:100%;
+    center:block;
 }
 @media screen and (max-width: 500px) {
     body{
@@ -48,8 +55,43 @@ img{
 
 .hamburger-icon{
     display: log-in , homepage , logout;
-    position:right top ;
-    cursor: pointer;
+    position: right top;
+    cursor: heart;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width:200px;
 
 }
+}
+/*button*/
+#toggle{
+    position: absolute;
+    left: 20px;    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+/*day mode*/
+body.day{
+    background-color: #87CEEB;
+}
+
+body.day#toggle{
+    background-color:#222;
+    color:white;
+}
+
+/*night mode*/
+body.night{
+    background-color: #200224;
+}
+
+body.night.sun{
+    display:none;
+}
+body.night.moon{
+    display:block;
 }
