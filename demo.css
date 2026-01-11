@@ -7,20 +7,16 @@ body {
 }
 
 header {
-    display: flex;
     background:#000000;
     color: white;
     padding: 20px;
-    text-align: center;
-    position: left, left , left , left , left;
-
-
+    position:top left , left , left , left , left;
 }
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;;
 
 }
 nav a {
@@ -98,3 +94,7 @@ body.night.sun{
 body.night.moon{
     display:block;
 }
+
+
+
+
