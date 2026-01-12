@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset = "utf-8">
-            <meta name = "viewport"content="width=device-width,initial-scale=1.0">
-            <title>home page</title>
-            <link rel ="stylesheet" href="index.css">
-            <link rel="stylesheet" href="toogle.css">   
-        </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel = " stylesheet" href="hamburger.css" >
+</head>
 
-        <body>
-            <header class="header">
-                <nav class="nav">
-                    <ul class="nav-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="project.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="videoDemo.html">Video Demo</a></li>
-                            <li><a href="sitereport.html">Site Report</a></li>
-                            <a href="hamburgericon"hamburger icon></a>
-                            
-                 
-                            <div class="hamburger">
-                                <label for="menu-toggle" class="hamburger-icon">☰</label>
-                        
-                            </div>
-                         </header>
-                      </div>
-                     </ul>
-                 </nav>
- 
-            
-            </header>
-                <!-- targets -->
-                <span id="day"></span>
-                <span id="night"></span>
+<body>
 
-                <!-- TOGGLE (only one shows at a time) -->
-                 <div class="toggle">
-                        <a href="#night" class="btn day-btn">☀ Day</a>
-                        <a href="#day" class="btn night-btn">🌙 Night</a>
-        
-                </div>
-                        
-                <div class="scene">
-                    <div class="sun"></div>
-                    <div class="moon"></div>
-                </div>
+<header class="header">
+    <nav class="nav">
+        <h1>ANU MAGAR</h1>
+                            <input type="checkbox" id="menu-toggle">
+                     <label for="menu-toggle" class="hamburger-icon">☰</label>
 
-            <section>
-                <div class="section">
-                   <img src="https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="my photo" width="400">      
-                 </div>
-            </section>
-        </body>
-    </html>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="profile">
+        <h2>portfolio</h2>
+        <img src="https://scontent.fktm21-2.fna.fbcdn.net/v/t1.15752-9/615524708_2383889838700122_7281634067101331536_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ApC6afvOWBAQ7kNvwHm9ZAB&_nc_oc=AdnJHKJWY-6P35DTnrS3CYuQNSiR2FrPO2zIqjRRSOAeKevLEe8GeIY_iw7-lSAlSJM_J9WiMbsqtu_1kGUJCQWf&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm21-2.fna&oh=03_Q7cD4QGjDGREjuT5drDDrDGui8KlanS5002Xj5pXzOjwKajVzg&oe=698C3381" alt="profile photo" >
+    </section>
+
+    <section class="home">
+        <div class="bio">
+            <h1>Hi , Iam anu</h1>
+            <p>
+                This is my web development portfolio.
+            </p>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
+

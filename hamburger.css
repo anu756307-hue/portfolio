@@ -1,0 +1,29 @@
+#menu-toggle{
+    display: none;
+}
+
+.hamburger-icon{
+    display: none;
+    font-size: 30px;
+    color: white;   
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    #menu-toggle:checked + .hamburger-icon + .nav-links {
+        display: flex;
+    }
+}

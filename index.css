@@ -1,100 +1,71 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    line height:1.6;
-}
-
-header {
-    display: flex;
-    background:#000000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: left, left , left , left , left;
-
-
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  position: center;
-}
-
-
-style.grid-container  {  
-  display: grid;  
-  justify-self: space-evenly;
-  grid-gap:10px;
-  grid-template-columns:  50px 50px 50px;     
-  background-color: #2196F3;  
-  padding: 10px;  
-} 
-.grid-container > div {  
-  background-color: rgba(255, 61, 152, 0.8);  
-  border:1px solid rgba(240, 67, 67, 0.8);  
-  padding: 20px 0;
-  font-size: 30px;  
-  text-align: center;
-}
-img{
-    border:2px solid #d11d9e;
-    max-width:100%;
-    center:block;
-}
-@media screen and (max-width: 500px) {
-    body{
-        background:red;
-}
-
-.hamburger-icon{
-    display: log-in , homepage , logout;
-    position: right top;
-    cursor: heart;
-    list-style-type: none;
+*{
     margin:0;
     padding:0;
-    width:200px;
-
-}
-}
-/*button*/
-#toggle{
-    position: absolute;
-    left: 20px;    
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 10px;
-}
-/*day mode*/
-body.day{
-    background-color: #87CEEB;
+    box-sizing:border-box;
 }
 
-body.day#toggle{
-    background-color:#222;
+body{
+    font-family: Arial, sans-serif;
+    background:#226ab7;
+    color:#fff;
+}
+
+.header{
+    background:#000;
+    padding:20px;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
     color:white;
 }
 
-/*night mode*/
-body.night{
-    background-color: #200224;
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:40px;
 }
 
-body.night.sun{
-    display:none;
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
-body.night.moon{
+
+.profile img{
+    width:35%;
+    border:2px solid #d11d9e;
     display:block;
+    margin:40px auto;
+    position:absolute;
+    left:10%;
+}
+.home{
+    height:300px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.bio{
+    max-width: 400px;
+}
+.bio h1{
+    font-size: 32px ;
+}
+.bio p{
+    font-size: 16px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:20px;
 }
